@@ -1,0 +1,48 @@
+VM238:1 Console was cleared
+undefined
+var abc = {
+    name = "manish",
+    course = "MCA",
+    age = 45
+}
+VM845:2 Uncaught SyntaxError: Invalid shorthand property initializer
+var abc = {
+    name : "manish",
+    course : "MCA",
+    age : 45
+}
+undefined
+var abc = {
+    name : "manish",
+    course : "MCA",
+    age : 45,
+    5:"hello"
+}
+undefined
+abc.id = 45
+45
+abc
+{5: "hello", name: "manish", course: "MCA", age: 45, id: 45}
+var we = [4,5,6,3,2,4,7];
+undefined
+we
+(7) [4, 5, 6, 3, 2, 4, 7]0: 41: 52: 63: 34: 25: 46: 7length: 7__proto__: Array(0)
+class User{
+    id;
+    name;
+    age;
+    constructor(id,name,age){
+        this.id = id;
+        this.name = name;
+        this.age = age;
+    }
+}
+undefined
+var userArray = [
+    new User(45,'manish',23),
+    new User(63,'puneet puri',50),
+    new User(42,'naveen',24)
+];
+undefined
+userArray[0]["name"]
+"manish"
