@@ -1,0 +1,131 @@
+var ab = 5**3;
+undefined
+ab
+125
+ab = 25/6;
+4.166666666666667
+ab = 25%6;
+1
+5++
+VM275:1 Uncaught SyntaxError: Invalid left-hand side expression in postfix operation
+var a = 5++;
+VM305:1 Uncaught SyntaxError: Invalid left-hand side expression in postfix operation
+ab +=ab
+2
+var y = 5;
+undefined
+y
+5
+y +=1
+6
+y = y+1;
+7
+y +=1 
+8
+y -=1 
+7
+y*=2
+14
+y=y*2;
+28
+y
+28
+var u = 28;
+undefined
+y == u
+true
+u=85;
+85
+y == u
+false
+y=28;
+28
+u='28';
+"28"
+u = '29'
+"29"
+y < u
+true
+y='7a8';
+"7a8"
+u = "8a9;
+VM753:1 Uncaught SyntaxError: Invalid or unexpected token
+u = "8a9";
+"8a9"
+u = "8b9";
+"8b9"
+y = "89@";
+"89@"
+u = "@89";
+"@89"
+y>u
+false
+u > y
+true
+u<y
+false
+var rt = 45;
+undefined
+var tt = 45;
+undefined
+tt=45?"hello":"bye";
+"hello"
+add(){
+    let sum = 5+6;
+    console.log('sum');
+}
+VM1344:1 Uncaught SyntaxError: Unexpected token '{'
+function add(){
+    let sum = 5+6;
+    console.log('sum');
+}
+undefined
+add();
+VM1364:3 sum
+undefined
+function add(){
+    let sum = 5+6;
+    console.log(sum);
+}
+undefined
+add();
+VM1414:3 11
+undefined
+function add(a,b){
+     let sum = a+b;
+     console.log(sum);
+}
+undefined
+add(4,6);
+VM1550:3 10
+undefined
+add(4,8);
+VM1550:3 12
+undefined
+function add(a,b){
+     let sum = a+b;
+     return sum;
+}
+undefined
+let a = add(7,8);
+undefined
+a
+15
+function add(a,b){
+     return a+b;
+}
+undefined
+let a = add(7,8);
+undefined
+a
+15
+function mycall(){
+    console.log("hello");
+    return 45;
+    console.log("bey");
+    
+}
+undefined
+mycall();
+VM1863:2 hello
+45
